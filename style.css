@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.game {
+    width: 500px;
+    height: 225px;
+    border: 1px solid black;
+    margin: auto;
+    background: url(backround\ .jpg) no-repeat center;
+
+}
+
+#character {
+    width: 75px;
+    height: 75px;
+    background: url(character1.png) no-repeat center;
+    /* Replace 'path_to_your_image.png' with the path to your PNG file */
+    background-size: cover;
+    /* This will ensure your image covers the entire div */
+    position: relative;
+    top: 150px;
+}
+
+.animate {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    30% {
+        top: 100px;
+    }
+
+    70% {
+        top: 100px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}
+
+#block {
+    background-color: brown;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+
+    animation: block 1s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left: 500px
+    }
+
+    100% {
+        left: -20px
+    }
+}
+
+p {
+    text-align: center;
+}
